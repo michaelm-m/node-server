@@ -4,7 +4,7 @@ const app = express();
 const port = 8081;
 
 app.get('/', (req, res) => {
-  const responseText = '*Node Application ::: Hello ' + process.env.CUSTOM_ENV + '!';
+  const responseText = '*Node Application ::: Hello : ' + process.env.CUSTOM_ENV + ' has ' + process.env.CUSTOM_ENV_2;
   res.send(responseText);
 });
 
